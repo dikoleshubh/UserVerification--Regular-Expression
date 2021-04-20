@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace ReX
 {
-    class name
+    class Name
     {
         static string Name = "^[A-Z]{1}[a-z]{2,}$";
         Regex regexName = new Regex(Name);
