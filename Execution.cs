@@ -14,11 +14,11 @@ namespace ReX
         {
             if(regexName.IsMatch(firstname)) //// First Name Validation Check
             {
-                Console.WriteLine("First Name Is  Valid");
+                Console.WriteLine("First Name Is Valid");
             }
             else
             {
-                Console.WriteLine("First Name Is  Invalid");
+                Console.WriteLine("First Name Is Invalid");
             }
         }
         public void Lastname(string Lastname)
