@@ -7,12 +7,12 @@ namespace ReX
 {
     class MailVerification
     {
-        static string email = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+        static string email = @"^[^@\s]+@[^@\s]+\.[^@\s]+$"; ////Valid Email Condition
         Regex regexEmail = new Regex(email);
 
         public  void verificationemail(string emailID)
         {
-            if (regexEmail.IsMatch(emailID))
+            if (regexEmail.IsMatch(emailID)) ////Verification
             {
                 Console.WriteLine("Email Is  Valid");
             }
