@@ -7,11 +7,11 @@ namespace ReX
 {
     class Password
     {
-        static string password = "^(?=.*[a - z])(?=.*[A - Z])(?=.*)(?=.*[^a - zA - Z]).{8,15}$";
+        static string password = "^(?=.*[a - z])(?=.*[A - Z])(?=.*)(?=.*[^a - zA - Z]).{8}$"; ////Ideal Pasword  Condition
         Regex regexEmail = new Regex(password);
         public void passwordvarification(string passwordID)
         {
-            if (regexEmail.IsMatch(passwordID))
+            if (regexEmail.IsMatch(passwordID))//// Checking condition
             {
                 Console.WriteLine("Password Is  Valid");
             }
